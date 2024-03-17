@@ -35,7 +35,10 @@ const App = () => {
             <Route path="/getservice" element={<GetService/>} />
 
           </Routes>
+        
+
             <Footer />
+      
       
       </div>
 

@@ -17,6 +17,7 @@
     "react-router-dom": "^6.22.3",
     "react-simple-image-viewer": "^1.2.2",
     "react-toastify": "^10.0.5",
+    "react-whatsapp": "^0.3.0",
     "scroll-lock": "^2.1.5",
     "twilio": "^5.0.1"
   },

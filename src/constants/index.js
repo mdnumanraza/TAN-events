@@ -69,72 +69,14 @@ import { bdaypic, partypic} from '../assets/servicespic/gallery'
 
 export const benefits = [
   {
-    id: "0",
-    title: "Wedding",
-    text: "Turn your dream wedding into reality with our meticulous attention to detail and personalized touch.",
-    backgroundUrl: "./src/assets/benefits/card-1.svg",
-    iconUrl: benefitIcon1,
-    imageUrl: "https://4.imimg.com/data4/WR/TX/MY-23918569/wedding-reception-event-services-500x500.jpg",
-  },
-
-  {
-    id: "1",
-    title: "Engagement",
-    text: "Celebrate your love story with elegance and sophistication through our expertly crafted engagement event planning services.",
-    backgroundUrl: "./src/assets/benefits/card-2.svg",
-    iconUrl: benefitIcon2,
-    imageUrl: 'https://5.imimg.com/data5/SELLER/Default/2021/12/LQ/FG/BJ/91316177/wedding-planner-chennai-500x500.jpeg',
-    light: true,
-  },
-  
-  {
-    id: "2",
-    title: "Baby Shower",
-    text: "Welcome the newest addition to your family in style with our heartwarming and memorable baby shower celebrations.",
-    backgroundUrl: "./src/assets/benefits/card-3.svg",
-    iconUrl: benefitIcon3,
-    imageUrl: 'https://i.pinimg.com/originals/19/02/fd/1902fd91d0f813199d5cacfb03921d88.jpg',
-  },
-  {
-    id: "3",
-    title: "Birthday Suprises",
-    text: "Create unforgettable moments with our imaginative and customized birthday surprises that delight both young and old",
-    backgroundUrl: "./src/assets/benefits/card-4.svg",
-    iconUrl: benefitIcon4,
-    imageUrl: bdaypic,
-    light: true,
-  },
-  {
-    id: "4",
-    title: "Naming Ceremony",
-    text: "Mark the beginning of a new chapter with grace and reverence through our tailored naming ceremony arrangements.",
-    backgroundUrl: "./src/assets/benefits/card-5.svg",
-    iconUrl: benefitIcon1,
-    imageUrl: 'https://instaevent.in/images/webimages/baby%20cermony/idea.jpg',
-  },
-  {
-    id: "5",
-    title: "Festival Decoration",
-    text: "Immerse yourself in the spirit of festivities with our stunning and captivating festival decoration services.",
-    backgroundUrl: "./src/assets/benefits/card-6.svg",
-    iconUrl: benefitIcon2,
-    imageUrl: 'https://i.pinimg.com/736x/59/ac/2c/59ac2c388929152bbc97629d951329c2.jpg',
-  },
-  {
-    id: "6",
-    title: "Haldi",
-    text: "Embrace tradition and joy as we infuse vibrant colors and cultural richness into your haldi ceremony.",
-    backgroundUrl: "./src/assets/benefits/card-6.svg",
-    iconUrl: benefitIcon2,
-    imageUrl: 'https://www.happyeventsurat.com/admin/assets/images/HaldiCeremony/Haldi%20Ceremony_1678788967.webp',
-  },
-  {
     id: "7",
     title: "Ballon Decoration",
     text: "Elevate any occasion with our enchanting balloon arrangements tailored to your event's theme and style.",
     backgroundUrl: "./src/assets/benefits/card-6.svg",
     iconUrl: benefitIcon2,
     imageUrl: 'https://i.pinimg.com/originals/3e/52/12/3e5212669a67d4be236ae7e146d2890a.jpg',
+    price:'1499',
+
   },
   {
     id: "8",
@@ -143,7 +85,80 @@ export const benefits = [
     backgroundUrl: "./src/assets/benefits/card-6.svg",
     iconUrl: benefitIcon2,
     imageUrl: partypic,
+    price:'',
   },
+ 
+  
+  {
+    id: "3",
+    title: "Birthday Suprises",
+    text: "Create unforgettable moments with our imaginative and customized birthday surprises that delight both young and old",
+    backgroundUrl: "./src/assets/benefits/card-4.svg",
+    iconUrl: benefitIcon4,
+    imageUrl: bdaypic,
+    light: true,
+    price:'',
+  },
+ 
+  {
+    id: "5",
+    title: "Festival Decoration",
+    text: "Immerse yourself in the spirit of festivities with our stunning and captivating festival decoration services.",
+    backgroundUrl: "./src/assets/benefits/card-6.svg",
+    iconUrl: benefitIcon2,
+    imageUrl: 'https://i.pinimg.com/736x/59/ac/2c/59ac2c388929152bbc97629d951329c2.jpg',
+    price:'',
+  },
+  {
+    id: "6",
+    title: "Haldi",
+    text: "Embrace tradition and joy as we infuse vibrant colors and cultural richness into your haldi ceremony.",
+    backgroundUrl: "./src/assets/benefits/card-6.svg",
+    iconUrl: benefitIcon2,
+    imageUrl: 'https://www.happyeventsurat.com/admin/assets/images/HaldiCeremony/Haldi%20Ceremony_1678788967.webp',
+    price:'',
+  },
+  {
+    id: "2",
+    title: "Baby Shower",
+    text: "Welcome the newest addition to your family in style with our heartwarming and memorable baby shower celebrations.",
+    backgroundUrl: "./src/assets/benefits/card-3.svg",
+    iconUrl: benefitIcon3,
+    imageUrl: 'https://i.pinimg.com/originals/19/02/fd/1902fd91d0f813199d5cacfb03921d88.jpg',
+    price:'',
+  },
+  {
+    id: "0",
+    title: "Wedding",
+    text: "Turn your dream wedding into reality with our meticulous attention to detail and personalized touch.",
+    backgroundUrl: "./src/assets/benefits/card-1.svg",
+    iconUrl: benefitIcon1,
+    imageUrl: "https://4.imimg.com/data4/WR/TX/MY-23918569/wedding-reception-event-services-500x500.jpg",
+    price:'',
+  },
+  
+
+  {
+    id: "1",
+    title: "Engagement",
+    text: "Celebrate your love story with elegance and sophistication through our expertly crafted engagement event planning services.",
+    backgroundUrl: "./src/assets/benefits/card-2.svg",
+    iconUrl: benefitIcon2,
+    imageUrl: 'https://5.imimg.com/data5/SELLER/Default/2021/12/LQ/FG/BJ/91316177/wedding-planner-chennai-500x500.jpeg',
+    price:'',
+    light: true,
+  },
+  
+  {
+    id: "4",
+    title: "Naming Ceremony",
+    text: "Mark the beginning of a new chapter with grace and reverence through our tailored naming ceremony arrangements.",
+    backgroundUrl: "./src/assets/benefits/card-5.svg",
+    iconUrl: benefitIcon1,
+    imageUrl: 'https://instaevent.in/images/webimages/baby%20cermony/idea.jpg',
+    price:'',
+  },
+ 
 ];
 
 export const socials = [

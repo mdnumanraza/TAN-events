@@ -5,8 +5,10 @@ import { FaWhatsapp } from "react-icons/fa6";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
+
 const GetService = () => {
   const myNumber = '9964974885'; // Your WhatsApp number
+
 
   const [formData, setFormData] = useState({
     name: '',
@@ -16,6 +18,7 @@ const GetService = () => {
 
   const [service, setService] = useState('');
   const [coupon, setCoupon] = useState('');
+  const [mssg, setMessg] = useState('');
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -34,10 +37,18 @@ const GetService = () => {
       return
     }
 
-    const message = `Hello, my name is ${formData.name} and my contact number is ${formData.mobile}. I am requesting ${service} service ${coupon&&`my coupon is ${coupon}`}.`;
-    console.log(message);
+    setMessg(`Hello, my name is *${formData.name}* and my contact number is ${formData.mobile}. I am requesting *${service}* service ${coupon&&`my coupon is _${coupon}_`}.`);
+    console.log(mssg);
 
-    const url = `https://web.whatsapp.com/send?phone=${myNumber}&text=${encodeURIComponent(message)}&app_absent=0`;
+    const urldesk = `https://web.whatsapp.com/send?phone=${myNumber}&text=${encodeURIComponent(mssg)}&app_absent=0`;
+    const urlmob = `whatsapp://send?text=${mssg}&phone=${myNumber}`
+    let url;
+    if(window.innerWidth>780){
+      url = urldesk;
+    }else{
+      url = urlmob;
+    }
+
     window.open(url, '_blank');
   };
 
@@ -118,6 +129,7 @@ const GetService = () => {
           <div className='flex gap-4'>
 
         <p>
+        
            Get Service
           </p> 
           <FaWhatsapp size={20} />
