@@ -65,6 +65,8 @@ export const TanEventServices = [
   "Customised Service",
 ];
 
+import { bdaypic, partypic} from '../assets/servicespic/gallery'
+
 export const benefits = [
   {
     id: "0",
@@ -99,7 +101,7 @@ export const benefits = [
     text: "Create unforgettable moments with our imaginative and customized birthday surprises that delight both young and old",
     backgroundUrl: "./src/assets/benefits/card-4.svg",
     iconUrl: benefitIcon4,
-    imageUrl: './src/assets/servicespic/bday3.jpeg',
+    imageUrl: bdaypic,
     light: true,
   },
   {
@@ -140,7 +142,7 @@ export const benefits = [
     text: "Transform your vision into reality with our bespoke decoration services, meticulously tailored to reflect your unique style and preferences, ensuring every detail is a reflection of your individuality and taste.",
     backgroundUrl: "./src/assets/benefits/card-6.svg",
     iconUrl: benefitIcon2,
-    imageUrl: './src/assets/servicespic/party.jpeg',
+    imageUrl: partypic,
   },
 ];
 

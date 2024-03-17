@@ -8,6 +8,7 @@ import {
 } from "./design/Services";
 
 import Generating from "./Generating";
+import { bdayabout } from "../assets/servicespic/gallery";
 
 const Services = () => {
   return (
@@ -26,7 +27,7 @@ const Services = () => {
                 width={800}
                 alt="Event"
                 height={730}
-                src={'./src/assets/servicespic/bday25.jpeg'}
+                src={bdayabout}
               />
             </div>
 
