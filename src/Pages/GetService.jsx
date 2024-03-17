@@ -34,7 +34,7 @@ const GetService = () => {
       return
     }
 
-    const message = `Hello, my name is ${formData.name} and my contact number is ${formData.mobile}. I am requesting ${service} service.`;
+    const message = `Hello, my name is ${formData.name} and my contact number is ${formData.mobile}. I am requesting ${service} service ${coupon&&`my coupon is ${coupon}`}.`;
     console.log(message);
 
     const url = `https://web.whatsapp.com/send?phone=${myNumber}&text=${encodeURIComponent(message)}&app_absent=0`;
