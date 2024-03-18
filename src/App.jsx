@@ -1,3 +1,5 @@
+import Balloon from "./Pages/Balloon";
+import Bday from "./Pages/Bday";
 import Gallery from "./Pages/Gallery";
 import GetService from "./Pages/GetService";
 import ButtonGradient from "./assets/svg/ButtonGradient";
@@ -33,10 +35,12 @@ const App = () => {
 
             <Route path="/gallery" element={<Gallery/>} />
             <Route path="/getservice" element={<GetService/>} />
+            <Route path="/balloon" element={<Balloon/>} />
+            <Route path="/bday" element={<Bday/>} />
 
           </Routes>
         
-
+            <Gallery/>
             <Footer />
       
       

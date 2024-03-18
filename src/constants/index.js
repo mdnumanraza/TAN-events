@@ -13,6 +13,7 @@ import {
   searchMd,
   twitter,
 } from "../assets";
+import { balloonpic } from "../assets/servicespic/balloons/balloon";
 
 const justdail = "https://seeklogo.com/images/J/justdial-logo-25E77253E2-seeklogo.com.png"
 
@@ -76,6 +77,7 @@ export const benefits = [
     iconUrl: benefitIcon2,
     imageUrl: 'https://i.pinimg.com/originals/3e/52/12/3e5212669a67d4be236ae7e146d2890a.jpg',
     price:'1499',
+    url:'/balloon'
 
   },
   {
@@ -85,7 +87,8 @@ export const benefits = [
     backgroundUrl: "./src/assets/benefits/card-6.svg",
     iconUrl: benefitIcon2,
     imageUrl: partypic,
-    price:'',
+    price:'3500',
+    url:'/getservice'
   },
  
   
@@ -97,7 +100,8 @@ export const benefits = [
     iconUrl: benefitIcon4,
     imageUrl: bdaypic,
     light: true,
-    price:'',
+    price:'1500',
+    url:'/bday'
   },
  
   {
@@ -107,17 +111,19 @@ export const benefits = [
     backgroundUrl: "./src/assets/benefits/card-6.svg",
     iconUrl: benefitIcon2,
     imageUrl: 'https://i.pinimg.com/736x/59/ac/2c/59ac2c388929152bbc97629d951329c2.jpg',
-    price:'',
+    price:'5000',
+    url:'/festival'
   },
-  {
-    id: "6",
-    title: "Haldi",
-    text: "Embrace tradition and joy as we infuse vibrant colors and cultural richness into your haldi ceremony.",
-    backgroundUrl: "./src/assets/benefits/card-6.svg",
-    iconUrl: benefitIcon2,
-    imageUrl: 'https://www.happyeventsurat.com/admin/assets/images/HaldiCeremony/Haldi%20Ceremony_1678788967.webp',
-    price:'',
-  },
+  // {
+  //   id: "6",
+  //   title: "Haldi",
+  //   text: "Embrace tradition and joy as we infuse vibrant colors and cultural richness into your haldi ceremony.",
+  //   backgroundUrl: "./src/assets/benefits/card-6.svg",
+  //   iconUrl: benefitIcon2,
+  //   imageUrl: 'https://www.happyeventsurat.com/admin/assets/images/HaldiCeremony/Haldi%20Ceremony_1678788967.webp',
+  //   price:'',
+  //   url:''
+  // },
   {
     id: "2",
     title: "Baby Shower",
@@ -125,29 +131,32 @@ export const benefits = [
     backgroundUrl: "./src/assets/benefits/card-3.svg",
     iconUrl: benefitIcon3,
     imageUrl: 'https://i.pinimg.com/originals/19/02/fd/1902fd91d0f813199d5cacfb03921d88.jpg',
-    price:'',
+    price:'2500',
+    url:'/babyshower'
   },
-  {
-    id: "0",
-    title: "Wedding",
-    text: "Turn your dream wedding into reality with our meticulous attention to detail and personalized touch.",
-    backgroundUrl: "./src/assets/benefits/card-1.svg",
-    iconUrl: benefitIcon1,
-    imageUrl: "https://4.imimg.com/data4/WR/TX/MY-23918569/wedding-reception-event-services-500x500.jpg",
-    price:'',
-  },
+  // {
+  //   id: "0",
+  //   title: "Wedding",
+  //   text: "Turn your dream wedding into reality with our meticulous attention to detail and personalized touch.",
+  //   backgroundUrl: "./src/assets/benefits/card-1.svg",
+  //   iconUrl: benefitIcon1,
+  //   imageUrl: "https://4.imimg.com/data4/WR/TX/MY-23918569/wedding-reception-event-services-500x500.jpg",
+  //   price:'',
+  //   url:''
+  // },
   
 
-  {
-    id: "1",
-    title: "Engagement",
-    text: "Celebrate your love story with elegance and sophistication through our expertly crafted engagement event planning services.",
-    backgroundUrl: "./src/assets/benefits/card-2.svg",
-    iconUrl: benefitIcon2,
-    imageUrl: 'https://5.imimg.com/data5/SELLER/Default/2021/12/LQ/FG/BJ/91316177/wedding-planner-chennai-500x500.jpeg',
-    price:'',
-    light: true,
-  },
+  // {
+  //   id: "1",
+  //   title: "Engagement",
+  //   text: "Celebrate your love story with elegance and sophistication through our expertly crafted engagement event planning services.",
+  //   backgroundUrl: "./src/assets/benefits/card-2.svg",
+  //   iconUrl: benefitIcon2,
+  //   imageUrl: 'https://5.imimg.com/data5/SELLER/Default/2021/12/LQ/FG/BJ/91316177/wedding-planner-chennai-500x500.jpeg',
+  //   price:'',
+  //   light: true,
+  //   url:''
+  // },
   
   {
     id: "4",
@@ -156,7 +165,8 @@ export const benefits = [
     backgroundUrl: "./src/assets/benefits/card-5.svg",
     iconUrl: benefitIcon1,
     imageUrl: 'https://instaevent.in/images/webimages/baby%20cermony/idea.jpg',
-    price:'',
+    price:'3500',
+    url:'/naming'
   },
  
 ];
@@ -193,3 +203,102 @@ export const socials = [
     url: "tel:+919353797148",
   },
 ];
+
+const { b1,b2, b3, b4, b5, b6, b7, b8} = balloonpic;
+
+export const bday = [
+  {
+    img:b1,
+    price:4500,
+  },
+  {
+    img:b2,
+    price:6500,
+  },
+  {
+    img:b3,
+    price:5500,
+  },
+  {
+    img:b4,
+    price:5000,
+  },
+  {
+    img:b5,
+    price:5000,
+  },
+  {
+    img:b6,
+    price:5000,
+  },
+  {
+    img:b7,
+    price:4500,
+  },
+  {
+    img:b8,
+    price:3999,
+  },
+]
+
+export const festival = [
+  {
+    
+  }
+]
+
+export const balloons = [
+  {
+    title:'Basic Party Decor',
+    img:'https://static.wixstatic.com/media/fe2da7_9618de5f47784361bda0df9a2d6612aa~mv2.png/v1/fill/w_329,h_329,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/10.png',
+    price:1499,
+
+  },
+  {
+    title:'Basic Theme Decor',
+    img:'https://static.wixstatic.com/media/fe2da7_32cde60442fe4a90b31ad49b11778dbe~mv2.png/v1/fill/w_329,h_329,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/14.png',
+    price:3499 ,
+  },
+  {
+    title:'Rich Decor',
+    img:'https://static.wixstatic.com/media/fe2da7_5e4cd4ab1aa844048723028e1f9fe554~mv2.jpeg/v1/fill/w_329,h_329,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/WhatsApp%20Image%202022-04-13%20at%2010_25_40%20PM.jpeg',
+    price:8499 ,
+  },
+  {
+    
+    img:'https://static.wixstatic.com/media/fe2da7_8d6cb5a998ef4affb9430cc136fbc8a2~mv2.jpeg/v1/fill/w_329,h_329,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/1500.jpeg',
+    price:1499 ,
+  },
+  {
+    img:'https://static.wixstatic.com/media/fe2da7_23f69f5d984243ffacb807d9c8b201a4~mv2.jpeg/v1/fill/w_342,h_240,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/1800.jpeg',
+    price:1800 ,
+  },
+  {
+    img:'https://static.wixstatic.com/media/fe2da7_258614a9be8549ce883c5c564195d95c~mv2.jpeg/v1/fill/w_329,h_438,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/2000.jpeg',
+    price:2000 ,
+  },
+  {
+    img:'https://static.wixstatic.com/media/fe2da7_90d5d0f6b285491da1e7a306bbdc2897~mv2.jpeg/v1/fill/w_329,h_240,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/3500.jpeg',
+    price:3500 ,
+  },
+  {
+    img:'https://static.wixstatic.com/media/fe2da7_851d0a7b48314f6c8eaf6bcbc9545804~mv2.jpeg/v1/crop/x_26,y_0,w_548,h_400/fill/w_329,h_240,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/4000.jpeg',
+    price:5000 ,
+  },
+  {
+    img:'https://static.wixstatic.com/media/fe2da7_cd406b33593c4ec7b27be732613bec1b~mv2.jpeg/v1/crop/x_47,y_0,w_986,h_720/fill/w_329,h_240,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/5000a.jpeg',
+    price:5000 ,
+  },
+  {
+    img:'https://static.wixstatic.com/media/fe2da7_2ffa203200e14d699e23dc50176ac481~mv2.png/v1/crop/x_102,y_0,w_689,h_503/fill/w_329,h_240,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/5000.png',
+    price:5000 ,
+  },
+  {
+    img:'https://static.wixstatic.com/media/fe2da7_8995bb642c444ea99aa8055ab136f534~mv2.jpeg/v1/crop/x_0,y_96,w_720,h_525/fill/w_329,h_240,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/7000.jpeg',
+    price:7000 ,
+  },
+  {
+    img:'https://static.wixstatic.com/media/fe2da7_e923c6a0d4094335bfaa4ca0da395d2c~mv2.jpeg/v1/crop/x_0,y_13,w_1280,h_934/fill/w_329,h_240,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/7_5k.jpeg',
+    price:7500 ,
+  },
+]

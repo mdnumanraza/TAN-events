@@ -19,6 +19,7 @@ const GetService = () => {
   const [service, setService] = useState('');
   const [coupon, setCoupon] = useState('');
   const [mssg, setMessg] = useState('');
+  const [msg, setMsg] = useState('');
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -37,7 +38,7 @@ const GetService = () => {
       return
     }
 
-    setMessg(`Hello, my name is *${formData.name}* and my contact number is ${formData.mobile}. I am requesting *${service}* service ${coupon&&`my coupon is _${coupon}_`}.`);
+    setMessg(`Hello, my name is *${formData.name}* and my contact number is ${formData.mobile}. \nI am requesting *${service}* service \n${coupon&&`my coupon is _${coupon}_`}. \n ${`*Message* : ${msg}`}`);
     console.log(mssg);
 
     const urldesk = `https://web.whatsapp.com/send?phone=${myNumber}&text=${encodeURIComponent(mssg)}&app_absent=0`;
@@ -110,6 +111,7 @@ const GetService = () => {
 
         <div className="mb-4">
           <label htmlFor="coupon" className="block text-sm font-semibold mb-1">Coupon Code</label>
+          <p className='text-gray-500 pb-1'>Add coupon to get discount</p>
           <input
             type="text"
             id="coupon"
@@ -117,6 +119,19 @@ const GetService = () => {
             value={coupon}
             onChange={(e) => setCoupon(e.target.value)}
             placeholder="Coupon code"
+            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-indigo-500"
+            
+          />
+        </div>
+
+        <div className="mb-4">
+          <label htmlFor="message" className="block text-sm font-semibold mb-1">Your Message</label>
+          <textarea
+            id="mssg"
+            name="mssg"
+            value={msg}
+            onChange={(e) => setMsg(e.target.value)}
+            placeholder="Enter your message"
             className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-indigo-500"
             
           />

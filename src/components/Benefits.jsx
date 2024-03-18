@@ -18,7 +18,7 @@ const Benefits = () => {
 
         <div className="flex flex-wrap gap-10 mb-10  justify-center items-center">
           {benefits.map((item) => (
-            <Link to='/getservice' className=" text-white no-underline">
+            <Link to={item.url} className=" text-white no-underline">
               {/* <div
                 className="block relative p-0.5 bg-no-repeat bg-[length:100%_100%] md:max-w-[24rem] cursor-pointer"
                 style={{
