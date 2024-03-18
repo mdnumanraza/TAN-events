@@ -7,7 +7,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 
 const GetService = () => {
-  const myNumber = '9964974885'; // Your WhatsApp number
+  const myNumber = '9353797148'; // Your WhatsApp number
 
 
   const [formData, setFormData] = useState({
@@ -15,6 +15,11 @@ const GetService = () => {
     mobile: '',
     category: '',
   });
+
+  const updatemsg = () => {
+    setMessg(`Hello, my name is *${formData.name}* and my contact number is ${formData.mobile}. \nI am requesting *${service}* service \n${coupon && `my coupon is _${coupon}_`}. \n ${`*Message* : ${msg}`}`);
+    console.log('done');
+  }
 
   const [service, setService] = useState('');
   const [coupon, setCoupon] = useState('');
@@ -24,29 +29,29 @@ const GetService = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    if(formData.name.length <1){
+    if (formData.name.length < 1) {
       toast.error("Enter your name");
       return
     }
 
-    if(formData.mobile.length <1){
+    if (formData.mobile.length < 1) {
       toast.error("Enter your mobile number")
       return
     }
-    if(service.length <1){
+    if (service.length < 1) {
       toast.error("Select any one service")
       return
     }
 
-    setMessg(`Hello, my name is *${formData.name}* and my contact number is ${formData.mobile}. \nI am requesting *${service}* service \n${coupon&&`my coupon is _${coupon}_`}. \n ${`*Message* : ${msg}`}`);
+    setMessg(`Hello, my name is *${formData.name}* and my contact number is ${formData.mobile}. \nI am requesting *${service}* service \n${coupon && `my coupon is _${coupon}_`}. \n ${`*Message* : ${msg}`}`);
     console.log(mssg);
 
     const urldesk = `https://web.whatsapp.com/send?phone=${myNumber}&text=${encodeURIComponent(mssg)}&app_absent=0`;
     const urlmob = `whatsapp://send?text=${mssg}&phone=${myNumber}`
     let url;
-    if(window.innerWidth>780){
+    if (window.innerWidth > 780) {
       url = urldesk;
-    }else{
+    } else {
       url = urlmob;
     }
 
@@ -55,7 +60,7 @@ const GetService = () => {
 
   return (
     <div className="max-w-md mx-auto p-6 rounded-md shadow-md mt-6">
-       <ToastContainer />
+      <ToastContainer />
       <h2 className="text-3xl underline font-bold text-center my-5">Get Service   </h2>
       <p className=' text-gray-400 text-md my-4 text-center'>Fill the form and submit we will contact you as soon as possible</p>
       <form onSubmit={handleSubmit}>
@@ -67,10 +72,13 @@ const GetService = () => {
             id="name"
             name="name"
             value={formData.name}
-            onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+            onChange={(e) => {
+              setFormData({ ...formData, name: e.target.value })
+              updatemsg();
+            }}
             placeholder="Enter your name"
             className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-indigo-500"
-            // required
+          // required
           />
         </div>
 
@@ -81,10 +89,13 @@ const GetService = () => {
             id="mobile"
             name="mobile"
             value={formData.mobile}
-            onChange={(e) => setFormData({ ...formData, mobile: e.target.value })}
+            onChange={(e) => {
+              setFormData({ ...formData, mobile: e.target.value })
+              updatemsg
+            }}
             placeholder="Enter your mobile number"
             className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-indigo-500"
-            // required
+          // required
           />
         </div>
 
@@ -94,9 +105,12 @@ const GetService = () => {
             id="category"
             name="category"
             value={service}
-            onChange={(e) => setService(e.target.value)}
+            onChange={(e) => {
+              setService(e.target.value)
+              updatemsg();
+            }}
             className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-indigo-500"
-            // required
+          // required
           >
             <option value="" disabled>Select Category</option>
 
@@ -106,7 +120,7 @@ const GetService = () => {
 
           </select>
 
-          
+
         </div>
 
         <div className="mb-4">
@@ -117,10 +131,13 @@ const GetService = () => {
             id="coupon"
             name="coupon"
             value={coupon}
-            onChange={(e) => setCoupon(e.target.value)}
+            onChange={(e) => {
+              setCoupon(e.target.value)
+              updatemsg();
+            }}
             placeholder="Coupon code"
             className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-indigo-500"
-            
+
           />
         </div>
 
@@ -130,10 +147,13 @@ const GetService = () => {
             id="mssg"
             name="mssg"
             value={msg}
-            onChange={(e) => setMsg(e.target.value)}
+            onChange={(e) => {
+              setMsg(e.target.value)
+              updatemsg();
+            }}
             placeholder="Enter your message"
             className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-indigo-500"
-            
+
           />
         </div>
 
@@ -142,12 +162,8 @@ const GetService = () => {
           className="w-full text-white py-4 px-4 rounded-md focus:outline-none "
         >
           <div className='flex gap-4'>
-
-        <p>
-        
-           Get Service
-          </p> 
-          <FaWhatsapp size={20} />
+            <p> Get Service</p>
+            <FaWhatsapp size={20} />
           </div>
         </Button>
 

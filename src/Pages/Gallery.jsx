@@ -13,12 +13,13 @@ import { gallery } from '../assets/servicespic/gallery'
 import { useState, useCallback } from 'react';
 import { render } from 'react-dom';
 import ImageViewer from 'react-simple-image-viewer';
+import { galleryFinal } from '../constants'
 
 
 const Gallery = () => {
     const [currentImage, setCurrentImage] = useState(0);
     const [isViewerOpen, setIsViewerOpen] = useState(false);
-    const images = gallery;
+    const images = galleryFinal;
 
     const openImageViewer = useCallback((index) => {
         setCurrentImage(index);
@@ -38,7 +39,7 @@ const Gallery = () => {
             <Section id="features">
                 <Heading
                     className="md:max-w-md lg:max-w-2xl underline"
-                    title="Gallery"
+                    title="Our Works"
                 />
 
                 <div className="flex flex-wrap gap-4 justify-center">

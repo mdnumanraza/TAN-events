@@ -34,10 +34,12 @@ import party1 from './party.jpeg'
 import party2 from './party2.jpeg'
 import party3 from './party3.jpeg'
 import party4 from './party4.jpeg'
+import { babyShower, balloons, bday, festival, naming } from '../../constants'
 
 export const bdaypic = bday3;
 export const bdayabout = bday25;
 export const partypic = party1;
+
 
 export const gallery = [
     party1,
@@ -75,5 +77,6 @@ export const gallery = [
     bday28,
     bday29,
     bday30,
-    party4
+    party4,
+    
 ];

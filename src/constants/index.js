@@ -66,7 +66,7 @@ export const TanEventServices = [
   "Customised Service",
 ];
 
-import { bdaypic, partypic} from '../assets/servicespic/gallery'
+import { bdaypic, gallery, partypic} from '../assets/servicespic/gallery'
 
 export const benefits = [
   {
@@ -243,8 +243,29 @@ export const bday = [
 
 export const festival = [
   {
-    
-  }
+      img:'https://static.wixstatic.com/media/84cb62_348a896a72004232bd911b91dd7195bb~mv2.jpeg/v1/fill/w_365,h_274,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/b2c5cb9e-3dd6-4947-89ce-825c29441052.jpeg',
+      price:3999,
+  },
+  {
+      img:'https://static.wixstatic.com/media/84cb62_f5da2fbe75e340c7a97632fe92020051~mv2.jpeg/v1/fill/w_365,h_274,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/88c2c7a8-7b04-4ff3-a8fb-55a8ba184d97.jpeg',
+      price:3999,
+  },
+  {
+      img:'https://static.wixstatic.com/media/84cb62_64a24be0ef3740f8bcb466964dd71de2~mv2.jpeg/v1/fill/w_365,h_274,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/18d8fa1e-4cf6-40f4-ba04-eed666e38723.jpeg',
+      price:3999,
+  },
+  {
+      img:'https://static.wixstatic.com/media/84cb62_34ab4f05b54e42b893e5d1c06d125bc1~mv2.jpg/v1/fill/w_365,h_274,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/IMG-20180129-WA0024-e1588786160963.jpg',
+      price:3999,
+  },
+  {
+      img:'https://static.wixstatic.com/media/84cb62_a1a496b2e2da4269811caf6314f90acd~mv2.jpg/v1/fill/w_365,h_274,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/marigold-Mala-flower-decorations-genda-flower-Mala-Decoration-16.jpg',
+      price:3999,
+  },
+  {
+      img:'https://static.wixstatic.com/media/84cb62_2a337b6bf82d48fa9d881996fb99feef~mv2.jpeg/v1/fill/w_365,h_274,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/971e80a6-1b51-4a02-a1db-e906272a1468.jpeg',
+      price:3999,
+  },
 ]
 
 export const balloons = [
@@ -302,3 +323,83 @@ export const balloons = [
     price:7500 ,
   },
 ]
+
+export const naming = [
+  {
+    img:'https://static.wixstatic.com/media/84cb62_b6839288daef49b6a4f2358faa490c83~mv2.jpeg/v1/fill/w_365,h_274,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/27900018-86c7-4d71-b6ec-8098495a368a.jpeg',
+    price:5000,
+  },
+  {
+    img:'https://static.wixstatic.com/media/84cb62_266cba2f217d4e34b4215b9058f32dc4~mv2.jpeg/v1/fill/w_365,h_274,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/4bd31f20-78b6-44b8-a16c-9c507a7357b0.jpeg',
+    price:5000,
+  },
+  {
+    img:'https://static.wixstatic.com/media/84cb62_dc1d72a9fd394ebb940dfd201612265e~mv2.jpeg/v1/fill/w_365,h_274,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/3a1c1d66-00cc-451f-800a-5401e86b68dc.jpeg',
+    price:5000,
+  },
+  {
+    img:'https://anilevents.in/wp-content/uploads/2020/02/Naming-ceremony.jpg-1.jpg',
+    price:5000,
+  },
+  {
+    img:'https://d1x5473tif8knj.cloudfront.net/media/events/1510/conversions/Naming-Ceremony-watermark.jpg',
+    price:5000,
+  },
+  {
+    img:'https://i.pinimg.com/originals/da/95/80/da9580b888887126dcb1be0c5dba6ca6.jpg',
+    price:5000,
+  },
+]
+
+export const babyShower = [
+  {
+    img:'https://static.wixstatic.com/media/84cb62_82db2743ac9d4f08adb8bc66acff5658~mv2.jpeg/v1/fill/w_365,h_274,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/871eb343-2ba4-49c7-b7f1-d3cab2dbc7a7.jpeg',
+    price:5000,
+  },
+  {
+    img:'https://static.wixstatic.com/media/84cb62_669d1e4c436e418cb3a4c4893d489528~mv2.jpeg/v1/fill/w_365,h_274,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/WhatsApp-Image-2022-05-28-at-11_44_41-AM-1.jpeg',
+    price:5000,
+  },
+  {
+    img:'https://static.wixstatic.com/media/84cb62_8a0b0fa3acf94c58a716044f2d68ad5c~mv2.jpeg/v1/fill/w_1140,h_565,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/84cb62_8a0b0fa3acf94c58a716044f2d68ad5c~mv2.jpeg',
+    price:5000,
+  },
+  {
+    img:'https://5.imimg.com/data5/SELLER/Default/2021/8/GM/IP/OK/5844513/baby-shower-planning-service.jpeg',
+    price:5000,
+  },
+  {
+    img:'https://www.partyplanetindia.com/images/gallery/baby-showers/big-img/planning-a-baby-shower.jpg',
+    price:5000,
+  },
+  {
+    img:'https://www.partyplanetindia.com/images/gallery/baby-showers/big-img/7.jpg',
+    price:5000,
+  },
+]
+
+const galleryFinal = [...gallery];
+
+balloons.forEach((item)=>{
+  galleryFinal.push(item.img)
+})
+
+babyShower.forEach((item)=>{
+  galleryFinal.push(item.img)
+})
+
+bday.forEach((item)=>{
+  galleryFinal.push(item.img)
+})
+
+festival.forEach((item)=>{
+  galleryFinal.push(item.img)
+})
+
+naming.forEach((item)=>{
+  galleryFinal.push(item.img)
+})
+
+export {galleryFinal}
+
+
