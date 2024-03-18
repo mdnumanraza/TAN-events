@@ -18,6 +18,10 @@ const Services = () => {
           title="About Us"
           text="TAN events helps you make your occasions memoriable"
         />
+        <div className="flex justify-center item-center">
+
+         <a href="tel:+919353797148" className="underline text-purple-300 text-xl mb-8 text-center" >Contact Details: 9353797148</a>
+        </div>
 
         <div className="relative">
           <div className="relative z-1 flex items-center h-[39rem] mb-5 p-8 border border-n-1/10 rounded-3xl overflow-hidden lg:p-20 xl:h-[46rem]">
@@ -43,6 +47,7 @@ const Services = () => {
                     <p className="ml-4">{item}</p>
                   </li>
                 ))}
+                  <a href="tel:+919353797148" className="underline text-purple-300 mt-8">Call Now: 9353797148</a> 
               </ul>
             </div>
 

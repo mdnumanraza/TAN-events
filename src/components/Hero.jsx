@@ -35,11 +35,13 @@ const Hero = () => {
               />
             </span>
           </h1>
-          <p className="body-1 max-w-3xl mx-auto mb-6 text-n-2 lg:mb-8">
-            Unlock the possibilities of your special occasions and make it memoriable for life
+          <p className="body-1 max-w-[50rem] mx-auto mb-6 text-n-2 lg:mb-8">
+            Unlock the possibilities of your special occasions and memoriable for life
             long.
             <br />
             Simple Decorations only @  ₹1199/-
+            <br />
+            <a href="tel:+919353797148" className="underline text-purple-300 my-4">Call Now: 9353797148</a> 
            
           </p>
           <Button href="/gallery" white>

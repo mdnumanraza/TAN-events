@@ -17,7 +17,7 @@ const GetService = () => {
   });
 
   const updatemsg = () => {
-    setMessg(`Hello, my name is *${formData.name}* and my contact number is ${formData.mobile}. \nI am requesting *${service}* service \n${coupon && `my coupon is _${coupon}_`}. \n ${`*Message* : ${msg}`}`);
+    setMessg(`*Name*: ${formData.name}\n*Phone no*: ${formData.mobile}.\n*Service*: *${service}*\n${coupon && `*Coupon code*: _${coupon}_`}.\n${`*Message* : ${msg}`}`);
     console.log('done');
   }
 
@@ -43,7 +43,7 @@ const GetService = () => {
       return
     }
 
-    setMessg(`Hello, my name is *${formData.name}* and my contact number is ${formData.mobile}. \nI am requesting *${service}* service \n${coupon && `my coupon is _${coupon}_`}. \n ${`*Message* : ${msg}`}`);
+    setMessg(`*Name*: ${formData.name}\n*Phone no*: ${formData.mobile}.\n*Service*: *${service}*\n${coupon && `*Coupon code*: _${coupon}_`}.\n${`*Message* : ${msg}`}`);
     console.log(mssg);
 
     const urldesk = `https://web.whatsapp.com/send?phone=${myNumber}&text=${encodeURIComponent(mssg)}&app_absent=0`;
