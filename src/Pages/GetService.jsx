@@ -162,7 +162,7 @@ const GetService = () => {
           className="w-full text-white py-4 px-4 rounded-md focus:outline-none "
         >
           <div className='flex gap-4'>
-            <p> Get Service</p>
+            <p>Book Service</p>
             <FaWhatsapp size={20} />
           </div>
         </Button>

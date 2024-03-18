@@ -44,8 +44,8 @@ const Hero = () => {
             <a href="tel:+919353797148" className="underline text-purple-300 my-4">Call Now: 9353797148</a> 
            
           </p>
-          <Button href="/gallery" white>
-             View our Works → 
+          <Button href="/getservice" white>
+             Get Service
           </Button>
         </div>
         <div className="relative max-w-[23rem] mx-auto md:max-w-5xl xl:mb-24">
