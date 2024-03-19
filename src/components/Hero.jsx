@@ -8,9 +8,11 @@ import Generating from "./Generating";
 import Notification from "./Notification";
 import CompanyLogos from "./CompanyLogos";
 import heroPic from "../assets/servicespic/hero.jpg"
+import { Helmet } from 'react-helmet';
 
 const Hero = () => {
   const parallaxRef = useRef(null);
+  const weburl = 'https://tanevents.vercel.app'
 
   return (
     <Section
@@ -20,12 +22,35 @@ const Hero = () => {
       customPaddings
       id="hero"
     >
+      <Helmet>
+        <title>TAN Events</title>
+      </Helmet>
+
+      <Helmet>
+        <meta name="description" content='Best Event Management in Bangalore' />
+      </Helmet>
+
+      <Helmet>
+        <meta property="og:title" content={'TAN Events'} />
+        <meta property="og:description" content={'Event Managements in Bangalore'} />
+        <meta property="og:image" content={heroPic} />
+        <meta property="og:url" content={weburl} />
+        <meta property="og:type" content="website" />
+      </Helmet>
+
       <div className="container relative" ref={parallaxRef}>
         <div className="relative z-1 max-w-[62rem] mx-auto text-center mb-[3.875rem] md:mb-20 lg:mb-[6.25rem]">
           <h1 className="h1 mb-6">
             Experience your &nbsp;Spl. Moments&nbsp;with   {` `}
-            <span className="inline-block relative">
-              TAN events{" "}
+            <header className="inline-block relative">
+              TAN Events
+              <Helmet>
+                <title>TAN Events</title>
+              </Helmet>
+
+              <Helmet>
+                <meta name="description" content='Best Event Management in Bangalore' />
+              </Helmet>
               <img
                 src={curve}
                 className="absolute top-full left-0 w-full xl:-mt-2"
@@ -33,7 +58,7 @@ const Hero = () => {
                 height={28}
                 alt="Curve"
               />
-            </span>
+            </header>
           </h1>
           <p className="body-1 max-w-[50rem] mx-auto mb-6 text-n-2 lg:mb-8">
             Unlock the possibilities of your special occasions and memoriable for life
@@ -41,11 +66,11 @@ const Hero = () => {
             <br />
             Simple Decorations only @  ₹1199/-
             <br />
-            <a href="tel:+919353797148" className="underline text-purple-300 my-4">Call Now: 9353797148</a> 
-           
+            <a href="tel:+919353797148" className="underline text-purple-300 my-4">Call Now: 9353797148</a>
+
           </p>
           <Button href="/getservice" white>
-             Get Service
+            Get Service
           </Button>
         </div>
         <div className="relative max-w-[23rem] mx-auto md:max-w-5xl xl:mb-24">
@@ -65,17 +90,17 @@ const Hero = () => {
                 <Generating className="absolute left-4 right-4 bottom-5 md:left-1/2 md:right-auto md:bottom-8 md:w-[31rem] md:-translate-x-1/2" />
 
                 <ScrollParallax isAbsolutelyPositioned>
-                <a href="tel:+919353797148" className=" cursor-pointer">
-                  <ul className="hidden absolute -left-[5.5rem]  bottom-[7.5rem] px-1 py-1 bg-n-9/40 backdrop-blur border border-n-1/10 rounded-2xl xl:flex " >
-                    {/* {heroIcons.map((icon, index) => (
+                  <a href="tel:+919353797148" className=" cursor-pointer">
+                    <ul className="hidden absolute -left-[5.5rem]  bottom-[7.5rem] px-1 py-1 bg-n-9/40 backdrop-blur border border-n-1/10 rounded-2xl xl:flex " >
+                      {/* {heroIcons.map((icon, index) => (
                       <li className="p-5" key={index}>
                         <img src={icon} width={24} height={25} alt={icon} />
                       </li>
                     ))} */}
-                  
-                  <p className="p-5 cursor-pointer ">Call now : 9353797148</p>
-                  </ul>
-                    </a> 
+
+                      <p className="p-5 cursor-pointer ">Call now : 9353797148</p>
+                    </ul>
+                  </a>
                 </ScrollParallax>
 
                 <ScrollParallax isAbsolutelyPositioned>
