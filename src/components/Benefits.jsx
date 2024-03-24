@@ -27,7 +27,7 @@ const Benefits = () => {
                 key={item.id}
               > */}
 
-              <div className="flex flex-col w-[400px] border h-[540px] border-white rounded-lg hover:opacity-45 hover:scale-[1.03]  transition-transform">
+              <div className="flex flex-col w-[380px] border h-[540px] border-white rounded-lg hover:opacity-45 hover:scale-[1.03]  transition-transform">
                 <div className={` bg-no-repeat  w-full h-full bg-cover cursor-pointer rounded-lg`}
                   style={{
                     backgroundImage: `url(${item.imageUrl})`,

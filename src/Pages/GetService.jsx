@@ -4,6 +4,7 @@ import { benefits } from '../constants';
 import { FaWhatsapp } from "react-icons/fa6";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { Helmet } from 'react-helmet';
 
 
 const GetService = () => {
@@ -60,6 +61,18 @@ const GetService = () => {
 
   return (
     <div className="max-w-md mx-auto p-6 rounded-md shadow-md mt-6">
+       <Helmet>
+      
+      <title>Get Service - TA Events</title>
+      <meta 
+        name="description" 
+        content="Get event management services"
+      /> 
+      <meta 
+        name="keywords"
+        content="TA Event management, Event planning, Event management company, Event coordination, Event organizers, Event production, Corporate event planning, Wedding planning services, Party planning, Conference management, Venue selection, Event logistics, Theme parties, Event decoration, Entertainment booking, Catering services, Audiovisual services, Event marketing, Event promotions, Event budgeting, Event coordination services, Wedding, Naming Ceremony, Baby Shower, Engagement event management, Event management in bangalore, Event management near me"
+      />     
+    </Helmet>
       <ToastContainer />
       <h2 className="text-3xl underline font-bold text-center my-5">Get Service   </h2>
       <p className=' text-gray-400 text-md my-4 text-center'>Fill the form and submit we will contact you as soon as possible</p>

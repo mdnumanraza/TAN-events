@@ -22,35 +22,17 @@ const Hero = () => {
       customPaddings
       id="hero"
     >
-      <Helmet>
-        <title>TAN Events</title>
-      </Helmet>
+      
 
-      <Helmet>
-        <meta name="description" content='Best Event Management in Bangalore' />
-      </Helmet>
-
-      <Helmet>
-        <meta property="og:title" content={'TAN Events'} />
-        <meta property="og:description" content={'Event Managements in Bangalore'} />
-        <meta property="og:image" content={heroPic} />
-        <meta property="og:url" content={weburl} />
-        <meta property="og:type" content="website" />
-      </Helmet>
+     
 
       <div className="container relative" ref={parallaxRef}>
         <div className="relative z-1 max-w-[62rem] mx-auto text-center mb-[3.875rem] md:mb-20 lg:mb-[6.25rem]">
           <h1 className="h1 mb-6">
             Experience your &nbsp;Spl. Moments&nbsp;with   {` `}
             <header className="inline-block relative">
-              TAN Events
-              <Helmet>
-                <title>TAN Events</title>
-              </Helmet>
-
-              <Helmet>
-                <meta name="description" content='Best Event Management in Bangalore' />
-              </Helmet>
+              TA Events
+             
               <img
                 src={curve}
                 className="absolute top-full left-0 w-full xl:-mt-2"

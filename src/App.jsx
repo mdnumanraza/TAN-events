@@ -1,3 +1,4 @@
+import { Helmet } from "react-helmet";
 import BabyShower from "./Pages/BabyShower";
 import Balloon from "./Pages/Balloon";
 import Bday from "./Pages/Bday";
@@ -20,6 +21,18 @@ const App = () => {
   return (
     <>
       <div className="pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden">
+      <Helmet>
+      
+        <title>TA Events</title>
+        <meta 
+          name="description" 
+          content="Best event management webiste"
+        /> 
+        <meta 
+          name="keywords"
+          content="Wedding, Taskiya, Balloon Decoration, Naming Ceremony, Baby Shower, Engagement event management, Event management in bangalore, Event management near me, TA Event management, Event planning, Event management company, Event coordination, Event organizers, Event production, Corporate event planning, Wedding planning services, Party planning, Conference management, Venue selection, Event logistics, Theme parties, Event decoration, Entertainment booking, Catering services, Audiovisual services, Event marketing, Event promotions, Event budgeting, Event coordination services, Wedding, Naming Ceremony, Baby Shower, Engagement event management, Event management in bangalore, Event management near me"
+        />     
+      </Helmet>
        
             <Header />
           <Routes>

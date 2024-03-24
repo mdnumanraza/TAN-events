@@ -18,16 +18,7 @@ import { balloonpic } from "../assets/servicespic/balloons/balloon";
 const justdail = "https://seeklogo.com/images/J/justdial-logo-25E77253E2-seeklogo.com.png"
 
 export const navigation = [
-  {
-    id: "3",
-    title: "Home",
-    url: "/",
-  },
-  {
-    id: "0",
-    title: "Services",
-    url: "/getservice",
-  },
+ 
   {
     id: "1",
     title: "Gallery",

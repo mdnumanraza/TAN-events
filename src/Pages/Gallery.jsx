@@ -14,6 +14,7 @@ import { useState, useCallback } from 'react';
 import { render } from 'react-dom';
 import ImageViewer from 'react-simple-image-viewer';
 import { galleryFinal } from '../constants'
+import { Helmet } from 'react-helmet'
 
 
 const Gallery = () => {
@@ -33,6 +34,14 @@ const Gallery = () => {
 
     return (
         <div>
+            {/* <Helmet>
+        <title>Gallery - our works</title>
+        <meta name="description" content="Gallery of our event planning and management in bangalore" />
+        <meta
+          name="keywords"
+          content="Custom Decorations in bangalore, Event planning, Event management company, Event coordination, Event organizers, Event production, Corporate event planning, Theme parties, Event decoration, Catering services, Audiovisual services, Event marketing, Event promotions, Event budgeting, Event coordination services, Event management in bangalore, Event management near me"
+        />
+      </Helmet> */}
             <Header />
 
 
