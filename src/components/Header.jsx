@@ -88,11 +88,13 @@ const Header = () => {
           </div>
         </nav>
 
-        <Button className="hidden lg:flex" href="/getservice">
+        <Button className="hidden lg:flex" >
+          <Link to={"/getservice"}>
           <div className="flex gap-2">
             <p>Get Service</p>
             <FaWhatsapp size={20} />
           </div>
+          </Link>
         </Button>
 
         <Button className="ml-auto lg:hidden" px="px-3" onClick={toggleNavigation}>
