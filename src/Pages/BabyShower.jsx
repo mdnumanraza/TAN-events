@@ -14,7 +14,7 @@ const BabyShower = () => {
         <meta name="description" content="Baby shower event planning and management" />
         <meta
           name="keywords"
-          content="Baby Shower, Baby event management, Event planning for baby shower, Baby shower decoration, Baby shower in bangalore, TA Event management, Event planning, Event management company, Event coordination, Event organizers, Event production, Corporate event planning, Theme parties, Event decoration, Catering services, Audiovisual services, Event marketing, Event promotions, Event budgeting, Event coordination services, Wedding, Naming Ceremony, Baby Shower, Engagement event management, Event management in bangalore, Event management near me"
+          content="Baby Shower, Baby event management, Event planning for baby shower, Baby shower decoration, Baby shower in bangalore, TAN Event management, Event planning, Event management company, Event coordination, Event organizers, Event production, Corporate event planning, Theme parties, Event decoration, Catering services, Audiovisual services, Event marketing, Event promotions, Event budgeting, Event coordination services, Wedding, Naming Ceremony, Baby Shower, Engagement event management, Event management in bangalore, Event management near me"
         />
       </Helmet>
       <Section>

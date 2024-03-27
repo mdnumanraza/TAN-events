@@ -31,7 +31,7 @@ const Hero = () => {
           <h1 className="h1 mb-6">
             Experience your &nbsp;Spl. Moments&nbsp;with   {` `}
             <header className="inline-block relative">
-              TA Events
+              TAN Events
              
               <img
                 src={curve}

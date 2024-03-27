@@ -19,15 +19,7 @@ const Benefits = () => {
         <div className="flex flex-wrap gap-10 mb-10  justify-center items-center">
           {benefits.map((item) => (
             <Link to={item.url} className=" text-white no-underline">
-              {/* <div
-                className="block relative p-0.5 bg-no-repeat bg-[length:100%_100%] md:max-w-[24rem] cursor-pointer"
-                style={{
-                  backgroundImage: `url(${item.backgroundUrl})`,
-                }}
-                key={item.id}
-              > */}
-
-              <div className="flex flex-col w-[380px] border h-[540px] border-white rounded-lg hover:opacity-45 hover:scale-[1.03]  transition-transform">
+              <div className="flex flex-col md:w-[350px] w-[290px] border h-[540px] border-white rounded-lg hover:opacity-45 hover:scale-[1.03]  transition-transform">
                 <div className={` bg-no-repeat  w-full h-full bg-cover cursor-pointer rounded-lg`}
                   style={{
                     backgroundImage: `url(${item.imageUrl})`,

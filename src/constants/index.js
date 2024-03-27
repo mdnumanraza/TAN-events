@@ -27,7 +27,7 @@ export const navigation = [
   {
     id: "2",
     title: "About us",
-    url: "#aboutus",
+    url: "/about",
   },
  
   // {
@@ -62,7 +62,7 @@ import { bdaypic, gallery, partypic} from '../assets/servicespic/gallery'
 export const benefits = [
   {
     id: "7",
-    title: "Ballon Decoration",
+    title: "Balloon Decoration",
     text: "Elevate any occasion with our enchanting balloon arrangements tailored to your event's theme and style.",
     backgroundUrl: "./src/assets/benefits/card-6.svg",
     iconUrl: benefitIcon2,
@@ -199,14 +199,6 @@ const { b1,b2, b3, b4, b5, b6, b7, b8} = balloonpic;
 
 export const bday = [
   {
-    img:b1,
-    price:4500,
-  },
-  {
-    img:b2,
-    price:6500,
-  },
-  {
     img:b3,
     price:5500,
   },
@@ -222,6 +214,11 @@ export const bday = [
     img:b6,
     price:5000,
   },
+   {
+    img:b1,
+    price:4500,
+  },
+  
   {
     img:b7,
     price:4500,
@@ -229,6 +226,10 @@ export const bday = [
   {
     img:b8,
     price:3999,
+  },
+  {
+    img:b2,
+    price:6500,
   },
 ]
 
@@ -260,12 +261,7 @@ export const festival = [
 ]
 
 export const balloons = [
-  {
-    title:'Basic Party Decor',
-    img:'https://static.wixstatic.com/media/fe2da7_9618de5f47784361bda0df9a2d6612aa~mv2.png/v1/fill/w_329,h_329,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/10.png',
-    price:1499,
-
-  },
+ 
   {
     title:'Basic Theme Decor',
     img:'https://static.wixstatic.com/media/fe2da7_32cde60442fe4a90b31ad49b11778dbe~mv2.png/v1/fill/w_329,h_329,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/14.png',
@@ -301,6 +297,7 @@ export const balloons = [
     img:'https://static.wixstatic.com/media/fe2da7_cd406b33593c4ec7b27be732613bec1b~mv2.jpeg/v1/crop/x_47,y_0,w_986,h_720/fill/w_329,h_240,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/5000a.jpeg',
     price:5000 ,
   },
+  
   {
     img:'https://static.wixstatic.com/media/fe2da7_2ffa203200e14d699e23dc50176ac481~mv2.png/v1/crop/x_102,y_0,w_689,h_503/fill/w_329,h_240,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/5000.png',
     price:5000 ,
@@ -312,6 +309,12 @@ export const balloons = [
   {
     img:'https://static.wixstatic.com/media/fe2da7_e923c6a0d4094335bfaa4ca0da395d2c~mv2.jpeg/v1/crop/x_0,y_13,w_1280,h_934/fill/w_329,h_240,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/7_5k.jpeg',
     price:7500 ,
+  },
+  {
+    title:'Basic Party Decor',
+    img:'https://static.wixstatic.com/media/fe2da7_9618de5f47784361bda0df9a2d6612aa~mv2.png/v1/fill/w_329,h_329,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/10.png',
+    price:1499,
+
   },
 ]
 

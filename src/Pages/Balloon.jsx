@@ -14,7 +14,7 @@ const Balloon = () => {
         <meta name="description" content="Best balloon decorations for every occasions and parties" />
         <meta
           name="keywords"
-          content="Balloon Decorations, Balloon event management,Balloon parties, TA balloon events, Event planning for decorations,loon decorations,Balloon garlands, Balloon centerpieces, Balloon sculptures,Balloon bouquets,Balloon twisting, Custom balloon designs,  Themed balloon decorations, Event balloon décor, Party balloon arrangements, Corporate event balloons, Wedding balloon decorations, Birthday balloon designs, Balloon installations, Balloon backdrops, Balloon columns, Balloon releases, Helium balloon services, Balloon delivery services, Event management in bangalore, Event management near me"
+          content="Balloon Decorations, Balloon event management,Balloon parties, TAN balloon events, Event planning for decorations,loon decorations,Balloon garlands, Balloon centerpieces, Balloon sculptures,Balloon bouquets,Balloon twisting, Custom balloon designs,  Themed balloon decorations, Event balloon décor, Party balloon arrangements, Corporate event balloons, Wedding balloon decorations, Birthday balloon designs, Balloon installations, Balloon backdrops, Balloon columns, Balloon releases, Helium balloon services, Balloon delivery services, Event management in bangalore, Event management near me"
         />
       </Helmet>
             <Heading title={'Balloon Decoration'} className={'text-center underline'} />

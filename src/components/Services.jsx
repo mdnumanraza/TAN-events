@@ -16,7 +16,7 @@ const Services = () => {
       <div className="container">
         <Heading
           title="About Us"
-          text="TA events helps you make your occasions memoriable"
+          text="TAN events help you make your occasion a memoriable one"
         />
         <div className="flex justify-center item-center">
 

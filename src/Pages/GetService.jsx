@@ -63,14 +63,14 @@ const GetService = () => {
     <div className="max-w-md mx-auto p-6 rounded-md shadow-md mt-6">
        <Helmet>
       
-      <title>Get Service - TA Events</title>
+      <title>Get Service - TAN Events</title>
       <meta 
         name="description" 
         content="Get event management services"
       /> 
       <meta 
         name="keywords"
-        content="TA Event management, Event planning, Event management company, Event coordination, Event organizers, Event production, Corporate event planning, Wedding planning services, Party planning, Conference management, Venue selection, Event logistics, Theme parties, Event decoration, Entertainment booking, Catering services, Audiovisual services, Event marketing, Event promotions, Event budgeting, Event coordination services, Wedding, Naming Ceremony, Baby Shower, Engagement event management, Event management in bangalore, Event management near me"
+        content="TAN Event management, Event planning, Event management company, Event coordination, Event organizers, Event production, Corporate event planning, Wedding planning services, Party planning, Conference management, Venue selection, Event logistics, Theme parties, Event decoration, Entertainment booking, Catering services, Audiovisual services, Event marketing, Event promotions, Event budgeting, Event coordination services, Wedding, Naming Ceremony, Baby Shower, Engagement event management, Event management in bangalore, Event management near me"
       />     
     </Helmet>
       <ToastContainer />
