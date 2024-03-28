@@ -9,6 +9,7 @@ import Notification from "./Notification";
 import CompanyLogos from "./CompanyLogos";
 import heroPic from "../assets/servicespic/hero.jpg"
 import { Helmet } from 'react-helmet';
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   const parallaxRef = useRef(null);
@@ -51,9 +52,11 @@ const Hero = () => {
             <a href="tel:+919353797148" className="underline text-purple-300 my-4">Call Now: 9353797148</a>
 
           </p>
-          <Button href="/getservice" white>
+          <Link to={'/getservice'}>
+          <Button  white>
             Get Service
           </Button>
+          </Link>
         </div>
         <div className="relative max-w-[23rem] mx-auto md:max-w-5xl xl:mb-24">
           <div className="relative z-1 p-0.5 rounded-2xl bg-conic-gradient">

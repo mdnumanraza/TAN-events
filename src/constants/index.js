@@ -200,36 +200,36 @@ const { b1,b2, b3, b4, b5, b6, b7, b8} = balloonpic;
 export const bday = [
   {
     img:b3,
-    price:5500,
+    price:10599,
   },
   {
     img:b4,
-    price:5000,
+    price:12599,
   },
   {
     img:b5,
-    price:5000,
+    price:10799,
   },
   {
     img:b6,
-    price:5000,
+    price:10499,
   },
    {
     img:b1,
-    price:4500,
+    price:11499,
   },
   
   {
     img:b7,
-    price:4500,
+    price:10699,
   },
   {
     img:b8,
-    price:3999,
+    price:13999,
   },
   {
     img:b2,
-    price:6500,
+    price:10599,
   },
 ]
 

@@ -36,7 +36,7 @@ const Bday = () => {
                                     <div className="flex flex-col justify-center items-center">
                                        {item.title&& <h2 className="px-2 py-3 font-bold text-2xl text-purple-500" >{item.title}</h2>}
                                       
-                                        <p className="p-2 text-green-300">Starts from: ₹{item.price}/-</p>
+                                        <p className="p-2 text-green-300">Starts from: ₹{item.price.toLocaleString('en-US')}/-</p>
 
                                         <div className=" w-32 py-2 ">
                                             <Button >
