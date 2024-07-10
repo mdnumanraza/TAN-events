@@ -4,7 +4,7 @@ import { userinfo } from "../constants";
 
 
 const ContactIcons = () => {
-    const Number = userinfo.mobile
+    const Number = '9740957339'
 
   const scrollTop = () => {
     window.scrollTo(0, 0);
@@ -14,7 +14,7 @@ const ContactIcons = () => {
     <div className="fixed bottom-4 right-4 z-50">
         <div className="flex flex-col gap-2">
           {/* WhatsApp Icon */}
-          <a href={`https://wa.me/${Number}`}>
+          <a href={`https://wa.me/91${Number}`}>
             <button className="bg-green-500 hover:bg-green-600 text-white rounded-full p-3">
               <FaWhatsapp />
             </button>

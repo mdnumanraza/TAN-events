@@ -9,6 +9,7 @@ import { Helmet } from 'react-helmet';
 
 const GetService = () => {
   const myNumber = "91"+userinfo.mobile; //  WhatsApp number
+  // const myNumber = "919964974885"; //  WhatsApp number
  
 
   const [formData, setFormData] = useState({
@@ -18,7 +19,7 @@ const GetService = () => {
   });
 
   const updatemsg = () => {
-    setMessg(`*Name*: ${formData.name}\n*Phone no*: ${formData.mobile}.\n*Service*: *${service}*\n${coupon && `*Coupon code*: _${coupon}_`}.\n${`*Message* : ${msg}`}`);
+    setMessg(`*Message from TANEvents* \n *Name*: ${formData.name}\n *Phone no* : ${formData.mobile}.\n *Service* : *${service}*\n${coupon && `*Coupon code*: _${coupon}_ `}.\n${`*Message* : ${msg}`}`);
     console.log('done');
   }
 
