@@ -1,7 +1,7 @@
 import Section from "./Section";
 import Heading from "./Heading";
 import {  check } from "../assets";
-import { TanEventServices } from "../constants";
+import { TanEventServices, userinfo } from "../constants";
 import {
   Gradient,
 
@@ -20,7 +20,7 @@ const Services = () => {
         />
         <div className="flex justify-center item-center">
 
-         <a href="tel:+919353797148" className="underline text-purple-300 text-xl mb-8 text-center" >Contact Details: 9353797148</a>
+         <a href={`tel:+91${userinfo.mobile}`} className="underline text-purple-300 text-xl mb-8 text-center" >Contact Details: {userinfo.mobile}</a>
         </div>
 
         <div className="relative">
@@ -47,7 +47,7 @@ const Services = () => {
                     <p className="ml-4">{item}</p>
                   </li>
                 ))}
-                  <a href="tel:+919353797148" className="underline text-purple-300 mt-8">Call Now: 9353797148</a> 
+                  <a href={`tel:+91${userinfo.mobile}`} className="underline text-purple-300 mt-8">Call Now: {userinfo.mobile}</a> 
               </ul>
             </div>
 

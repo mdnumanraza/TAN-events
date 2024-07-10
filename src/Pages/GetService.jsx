@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Button from '../components/Button';
-import { benefits } from '../constants';
+import { benefits, userinfo } from '../constants';
 import { FaWhatsapp } from "react-icons/fa6";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -8,8 +8,8 @@ import { Helmet } from 'react-helmet';
 
 
 const GetService = () => {
-  const myNumber = '9353797148'; // Your WhatsApp number
-
+  const myNumber = userinfo.mobile; //  WhatsApp number
+ 
 
   const [formData, setFormData] = useState({
     name: '',

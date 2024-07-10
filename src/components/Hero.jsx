@@ -10,6 +10,7 @@ import CompanyLogos from "./CompanyLogos";
 import heroPic from "../assets/servicespic/hero.jpg"
 import { Helmet } from 'react-helmet';
 import { Link } from "react-router-dom";
+import { userinfo } from "../constants";
 
 const Hero = () => {
   const parallaxRef = useRef(null);
@@ -23,11 +24,7 @@ const Hero = () => {
       customPaddings
       id="hero"
     >
-      
-
-     
-
-      <div className="container relative" ref={parallaxRef}>
+     <div className="container relative" ref={parallaxRef}>
         <div className="relative z-1 max-w-[62rem] mx-auto text-center mb-[3.875rem] md:mb-20 lg:mb-[6.25rem]">
           <h1 className="h1 mb-6">
             Experience your &nbsp;Spl. Moments&nbsp;with   {` `}
@@ -49,7 +46,7 @@ const Hero = () => {
             <br />
             Simple Decorations only @  ₹1199/-
             <br />
-            <a href="tel:+919353797148" className="underline text-purple-300 my-4">Call Now: 9353797148</a>
+            <a href="tel:+919353797148" className="underline text-purple-300 my-4">Call Now: {userinfo.mobile}</a>
 
           </p>
           <Link to={'/getservice'}>
@@ -83,7 +80,7 @@ const Hero = () => {
                       </li>
                     ))} */}
 
-                      <p className="p-5 cursor-pointer ">Call now : 9353797148</p>
+                      <p className="p-5 cursor-pointer ">Call now :{userinfo.mobile} </p>
                     </ul>
                   </a>
                 </ScrollParallax>

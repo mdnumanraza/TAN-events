@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 import { FaChevronDown, FaChevronUp, FaPhone, FaWhatsapp } from "react-icons/fa6";
+import { userinfo } from "../constants";
 
 
 const ContactIcons = () => {
-    const Number = '9353797148'
+    const Number = userinfo.mobile
 
   const scrollTop = () => {
     window.scrollTo(0, 0);
