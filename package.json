@@ -21,7 +21,8 @@
     "react-transition-group": "^4.4.5",
     "react-whatsapp": "^0.3.0",
     "scroll-lock": "^2.1.5",
-    "twilio": "^5.0.1"
+    "twilio": "^5.0.1",
+    "vite-plugin-csp": "^1.1.2"
   },
   "devDependencies": {
     "@types/react": "^18.2.55",

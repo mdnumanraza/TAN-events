@@ -185,19 +185,19 @@ export const socials = [
     id: "3",
     title: "email",
     iconUrl: "https://cdn.pixabay.com/photo/2014/04/03/09/58/email-309491_960_720.png",
-    url: "mailto:shabnamjaan1992@gmail.com",
+    url: "mailto:shabanamjaan1992@gmail.com",
   },
   {
     id: "4",
     title: "Call",
     iconUrl: 'https://toppng.com/uploads/thumbnail/white-outline-phone-telephone-icon-free-11642670402zq8gitrdgh.png',
-    url: "tel:+919740957339",
+    url: "tel:9740957339",
   },
 ];
 
 export const userinfo = {
   mobile:"9740957339",
-  email:"shabnamjaan1992@gmail.com",
+  email:"shabanamjaan1992@gmail.com",
 }
 
 const { b1,b2, b3, b4, b5, b6, b7, b8} = balloonpic;
