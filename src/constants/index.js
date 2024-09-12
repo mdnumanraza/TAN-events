@@ -39,7 +39,7 @@ export const navigation = [
   {
     id: "5",
     title: "Contact us",
-    url: "https://wa.me/9740957339",
+    url: "https://wa.me/+919740957339",
     onlyMobile: true,
   },
 ];
@@ -167,7 +167,7 @@ export const socials = [
     id: "0",
     title: "WhatsApp",
     iconUrl: 'https://static-00.iconduck.com/assets.00/whatsapp-icon-512x510-iwc9b8jf.png',
-    url: "https://wa.me/9740957339",
+    url: "https://wa.me/+919740957339",
   },
   {
     id: "1",
@@ -179,7 +179,7 @@ export const socials = [
     id: "2",
     title: "Instagram",
     iconUrl: instagram,
-    url: "https://www.instagram.com/tanevents2024/",
+    url: "https://www.instagram.com/sseventsblr/",
   },
   {
     id: "3",
@@ -191,7 +191,7 @@ export const socials = [
     id: "4",
     title: "Call",
     iconUrl: 'https://toppng.com/uploads/thumbnail/white-outline-phone-telephone-icon-free-11642670402zq8gitrdgh.png',
-    url: "tel:9740957339",
+    url: "tel:+919740957339",
   },
 ];
 

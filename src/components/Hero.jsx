@@ -46,7 +46,7 @@ const Hero = () => {
             <br />
             Simple Decorations only @  ₹1199/-
             <br />
-            <a href="tel:+919353797148" className="underline text-purple-300 my-4">Call Now: {userinfo.mobile}</a>
+            <a href="tel:+919740957339" className="underline text-purple-300 my-4">Call Now: {userinfo.mobile}</a>
 
           </p>
           <Link to={'/getservice'}>
