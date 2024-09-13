@@ -1,0 +1,50 @@
+pipeline {
+    agent any
+
+    environment {
+        DOCKER_HUB_REPO = 'numanraza/tanevents'
+        KUBERNETES_DEPLOY_PATH = 'kubernetes/'
+    }
+
+    stages {
+        stage('Clone Repository') {
+            steps {
+                git 'https://github.com/mdnumanraza/TANEvents-with-CICD-Jenkins.git'
+            }
+        }
+
+        stage('Build React App Docker Image') {
+            steps {
+                script {
+                    def image = docker.build("${DOCKER_HUB_REPO}:${env.BUILD_ID}")
+                }
+            }
+        }
+
+        stage('Push Image to Docker Hub') {
+            steps {
+                script {
+                    docker.withRegistry('https://index.docker.io/v1/', 'dockerhub-credentials') {
+                        def image = docker.image("${DOCKER_HUB_REPO}:${env.BUILD_ID}")
+                        image.push()
+                    }
+                }
+            }
+        }
+
+        stage('Deploy to Kubernetes') {
+            steps {
+                script {
+                    sh "kubectl apply -f ${KUBERNETES_DEPLOY_PATH}/deployment.yaml"
+                    sh "kubectl apply -f ${KUBERNETES_DEPLOY_PATH}/service.yaml"
+                }
+            }
+        }
+    }
+
+    post {
+        always {
+            cleanWs()
+        }
+    }
+}
