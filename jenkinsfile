@@ -7,13 +7,13 @@ pipeline {
     }
 
     stages {
-        stage('Clone Repository') {
+        stage('Check out source') {
             steps {
                 git 'https://github.com/mdnumanraza/TANEvents-with-CICD-Jenkins.git'
             }
         }
 
-        stage('Build React App Docker Image') {
+        stage('Build Image') {
             steps {
                 script {
                     def image = docker.build("${DOCKER_HUB_REPO}:${env.BUILD_ID}")
@@ -21,7 +21,7 @@ pipeline {
             }
         }
 
-        stage('Push Image to Docker Hub') {
+        stage('Pushing Image') {
             steps {
                 script {
                     docker.withRegistry('https://index.docker.io/v1/', 'dockerhub-credentials') {
@@ -32,7 +32,7 @@ pipeline {
             }
         }
 
-        stage('Deploy to Kubernetes') {
+        stage('Deploying App to Kubernetes') {
             steps {
                 script {
                     sh "kubectl apply -f ${KUBERNETES_DEPLOY_PATH}/deployment.yaml"

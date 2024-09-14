@@ -184,6 +184,23 @@ CMD ["nginx", "-g", "daemon off;"]
 
 ## **Screenshots**
 
+### Project Flow Chart
+![flowchart](screenshots/flow%20chart.png)
+
+### Landing Page
+![Home](screenshots/home.png)
+
+### Services
+![services](screenshots/services.png)
+
+### Booking
+![booking](screenshots/service.png)
+
+### Jenkins Pipeline
+![pipeline](screenshots/jenkins.png)
+
+### CICD Pipeline
+![pipeline](screenshots/pipeline.png)
 
 ---
 
